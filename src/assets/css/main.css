@@ -3213,3 +3213,152 @@ Minus Margin Suscription Section style
     .minus-margin-section .bordered-box .single-bordered-box .owl-dot.active, .minus-margin-section .bordered-box .single-bordered-testimonial .owl-dot.active {
       border: 1px solid #2AB79D;
       background-color: #2AB79D; }
+/* ===================== 
+
+About Section style 
+
+===================== */
+.full-width-bg-area {
+  background-image: url("../images/about-section/area-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+  margin: 70px 0; }
+  .full-width-bg-area .minus-margin {
+    padding: 120px 70px;
+    margin-top: -70px;
+    margin-bottom: -70px; }
+    .full-width-bg-area .minus-margin .boxed-content {
+      line-height: 25px;
+      font-size: 15px;
+      position: relative;
+      padding-top: 25px;
+      padding-left: 30px; }
+      .full-width-bg-area .minus-margin .boxed-content:before {
+        position: absolute;
+        left: -35px;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+        content: ""; }
+      .full-width-bg-area .minus-margin .boxed-content:after {
+        position: absolute;
+        right: 0;
+        bottom: 80px;
+        width: 50px;
+        height: 50px;
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        content: ""; }
+      .full-width-bg-area .minus-margin .boxed-content a.bordered-btn {
+        display: inline-block;
+        padding: 10px 15px;
+        border: 2px solid #957E62;
+        color: #fff;
+        margin-top: 40px;
+        text-decoration: none;
+        font-weight: 500; }
+      .full-width-bg-area .minus-margin .boxed-content h2 {
+        font-size: 40px;
+        margin-bottom: 25px; }
+      .full-width-bg-area .minus-margin .boxed-content .author-name {
+        font-size: 24px;
+        position: relative;
+        padding-left: 60px;
+        margin-top: 16px; }
+        .full-width-bg-area .minus-margin .boxed-content .author-name:before {
+          position: absolute;
+          width: 40px;
+          height: 2px;
+          left: 15px;
+          top: 15px;
+          content: "";
+          background-color: #fff; }
+        .full-width-bg-area .minus-margin .boxed-content .author-name span {
+          font-size: 65%;
+          opacity: .3;
+          font-weight: 400;
+          padding-left: 10px; }
+    .full-width-bg-area .minus-margin .profile-image {
+      position: relative;
+      z-index: 2; }
+      .full-width-bg-area .minus-margin .profile-image img {
+        z-index: 2; }
+      .full-width-bg-area .minus-margin .profile-image:after {
+        position: absolute;
+        bottom: -24px;
+        right: -24px;
+        border: 2px solid #fff;
+        content: "";
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+  .full-width-bg-area .dark-bg {
+    background-color: #2B2F41;
+    color: #fff; }
+
+
+/* ===================== 
+
+Accordion Section style 
+===================== */
+.accordion-section .section-bg {
+  position: relative; }
+  .accordion-section .section-bg:after {
+    background-image: url("../images/accordion-section/accordion-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    position: absolute;
+    width: 47%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    content: ""; }
+
+.accordion-section p {
+  margin-bottom: 30px; }
+
+.accordion-section h2.section-title {
+  color: #030303;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  text-transform: uppercase; }
+  .accordion-section h2.section-title span {
+    color: #1AB3FE; }
+  .accordion-section h2.section-title:after {
+    display: none; }
+
+.accordion-section .accordion-style {
+  margin-bottom: 50px;
+  min-height: 400px; }
+  .accordion-section .accordion-style .card {
+    margin-top: 20px;
+    border-radius: 0; }
+  .accordion-section .accordion-style .card-header {
+    background: none;
+    border-radius: 0;
+    border-bottom: none;
+    padding: 0; }
+    .accordion-section .accordion-style .card-header h5 button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: left;
+      color: #252525;
+      font-weight: 500;
+      text-decoration: none;
+      position: relative; }
+      .accordion-section .accordion-style .card-header h5 button i.fas {
+        float: right;
+        font-size: 150%;
+        line-height: 20px;
+        display: none;
+        color: #6B6B6B; }
+    .accordion-section .accordion-style .card-header h5 button[aria-expanded=true] i.fa-angle-down {
+      display: block; }
+    .accordion-section .accordion-style .card-header h5 button[aria-expanded=false] i.fa-angle-up {
+      display: block; }

@@ -1,0 +1,85 @@
+/* ===================== 
+
+About Section style 
+===================== */
+
+.accordion-section{
+	
+	.section-bg{
+		position:relative;
+		&:after{
+			background-image:url('../images/accordion-section/accordion-bg.jpg');
+			background-size:cover;
+			background-position:center;
+			background-color:#ddd;
+			position:absolute;
+			width:47%;
+			height:100%;
+			left:0;
+			top:0;
+			content:"";
+		}
+		
+	}
+	p{
+		
+		margin-bottom:30px;
+	}
+	h2.section-title{
+		color:#030303;
+		font-size:28px;
+		margin-bottom:20px;
+		font-weight:900;
+		text-transform:uppercase;
+		span{
+			color:#1AB3FE;
+		}
+		&:after{
+			display:none;
+		}
+	}
+	.accordion-style{
+
+    	margin-bottom:50px;
+    	min-height:400px;
+		.card{
+			margin-top: 20px;
+    		border-radius: 0;
+		}
+		.card-header{
+			background: none;
+		    border-radius: 0;
+		    border-bottom: none;
+		    padding: 0;
+		    h5{
+		    	button{
+		    		display:block;
+		    		width:100%;
+		    		padding:10px;
+		    		text-align:left;
+		    		color:#252525;
+		    		font-weight:500;
+		    		text-decoration:none;
+		    		position:relative;
+		    		i.fas{
+		    			float:right;
+		    			font-size:150%;
+		    			line-height:20px;
+		    			display:none;
+		    			color:#6B6B6B;
+		    		}
+		    	}
+		    	button[aria-expanded=true]{
+		    		i.fa-angle-down{
+		    			display:block;
+		    		}
+		    	}
+		    	button[aria-expanded=false]{
+		    		i.fa-angle-up{
+		    			display:block;
+		    		}
+		    	}
+		    }
+		}
+	}
+}
