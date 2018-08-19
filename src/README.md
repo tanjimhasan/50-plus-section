@@ -9,6 +9,8 @@
 ## 3) __Service Section Two__: 
 ![alt text](/screenshots/service-two.png)
 
-
 ## 4) __Accordion Section One__: 
 ![alt text](/screenshots/accordion-section.png)
+
+## 5) __Service Section Three__: 
+![alt text](/screenshots/service-three.png)
