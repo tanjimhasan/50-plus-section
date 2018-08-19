@@ -3362,3 +3362,55 @@ Accordion Section style
       display: block; }
     .accordion-section .accordion-style .card-header h5 button[aria-expanded=false] i.fa-angle-up {
       display: block; }
+
+/* ===================== 
+
+Service Section Three style 
+
+===================== */
+.service-section-three .single-service {
+  position: relative;
+  margin-top: 30px; }
+  .service-section-three .single-service .single-service-bg {
+    background-size: cover;
+    height: 220px; }
+  .service-section-three .single-service .service-bg-1 {
+    background-image: url("../images/service-section-3/bg-1.jpg"); }
+  .service-section-three .single-service .service-bg-2 {
+    background-image: url("../images/service-section-3/bg-2.jpg"); }
+  .service-section-three .single-service .service-bg-3 {
+    background-image: url("../images/service-section-3/bg-3.jpg"); }
+  .service-section-three .single-service .service-box-content {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #f3f3f3;
+    border-top: 0px solid #f3f3f3; }
+    .service-section-three .single-service .service-box-content h4 {
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #000;
+      margin: 0; }
+    .service-section-three .single-service .service-box-content p.service-meta {
+      color: #bbb;
+      font-size: 12px; }
+  .service-section-three .single-service .service-box-extention {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: -24px; }
+    .service-section-three .single-service .service-box-extention a.bordered-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      border: 1px solid #f3f3f3;
+      background-color: #fff;
+      color: #999;
+      font-weight: 900;
+      font-size: 12px;
+      text-transform: uppercase;
+      text-decoration: none; }
+
+.service-section-three h2.section-title {
+  color: #333; }
+  .service-section-three h2.section-title:after {
+    background-color: #333; }
