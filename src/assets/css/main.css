@@ -4013,3 +4013,97 @@ Fashion site style
       .footer-area .subscription-form input[type='submit'] {
         padding: 8px 10px;
         margin-top: 20px; } }
+
+
+
+/* ====================
+ Useof Isotope style 
+ ==================== */
+.use-of-isotope ul.project-titles {
+  padding: 0;
+  margin: 0 0 30px 20px;
+  list-style: none; }
+  .use-of-isotope ul.project-titles li {
+    padding-right: 20px;
+    display: inline-block;
+    cursor: pointer; }
+  .use-of-isotope ul.project-titles li.active {
+    color: #06D4D4; }
+
+.use-of-isotope .project-list .single-project-item {
+  background-image: url("../images/useof-isotop-plugin/img-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+  height: 300px;
+  width: 31%;
+  margin-left: 1.5%;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2; }
+  .use-of-isotope .project-list .single-project-item:nth-child(2), .use-of-isotope .project-list .single-project-item:nth-child(4), .use-of-isotope .project-list .single-project-item:nth-child(5) {
+    height: 630px; }
+  .use-of-isotope .project-list .single-project-item:hover .project-item-hover {
+    opacity: 1;
+    visibility: visible; }
+  .use-of-isotope .project-list .single-project-item a, .use-of-isotope .project-list .single-project-item span {
+    color: #06D4D4; }
+  .use-of-isotope .project-list .single-project-item .project-item-hover {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    visibility: none;
+    transition: .3s; }
+    .use-of-isotope .project-list .single-project-item .project-item-hover:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      content: "";
+      opacity: .6;
+      z-index: -1; }
+    .use-of-isotope .project-list .single-project-item .project-item-hover a {
+      position: absolute;
+      right: 30px;
+      top: 20px; }
+    .use-of-isotope .project-list .single-project-item .project-item-hover h4 {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 0;
+      position: absolute;
+      bottom: 35px;
+      left: 20px; }
+      .use-of-isotope .project-list .single-project-item .project-item-hover h4 span {
+        display: block;
+        font-size: 80%;
+        margin-top: 10px; }
+
+.use-of-isotope .project-list .project-bg-2 {
+  background-image: url("../images/useof-isotop-plugin/img-2.jpg"); }
+
+.use-of-isotope .project-list .project-bg-3 {
+  background-image: url("../images/useof-isotop-plugin/img-3.jpg"); }
+
+.use-of-isotope .project-list .project-bg-4 {
+  background-image: url("../images/useof-isotop-plugin/img-4.jpg"); }
+
+.use-of-isotope .project-list .project-bg-5 {
+  background-image: url("../images/useof-isotop-plugin/img-4.jpg"); }
+
+.use-of-isotope .project-list .project-bg-6 {
+  background-image: url("../images/useof-isotop-plugin/img-1.jpg"); }
+
+.use-of-isotope .project-list .project-bg-7 {
+  background-image: url("../images/useof-isotop-plugin/img-3.jpg"); }
+
+.use-of-isotope .project-list .project-bg-8 {
+  background-image: url("../images/useof-isotop-plugin/img-6.jpg"); }
+
+.use-of-isotope .project-list .project-bg-9 {
+  background-image: url("../images/useof-isotop-plugin/img-7.jpg"); }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Use Of Isotope Plugin</title>
+
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="assets/css/custom.css" rel="stylesheet">
+	<link href="assets/css/responsive.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	
+</head>
+<body style="font-family: 'Open Sans', sans-serif; color: #020202; font-size: 15px; line-height: 1.7;">
+	
+	<div class="use-of-isotope">
+		<div class="section-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="project-titles">
+							<li class="active" data-filter="*">All</li>
+							<li data-filter=".web">Web</li>
+							<li data-filter=".graphic">Graphic</li>
+							<li data-filter=".photo">Photo</li>
+							<li data-filter=".design">Design</li>
+						</ul>
+
+						<div class="project-list">
+							<div class="single-project-item web">
+								<div class="project-item-hover">
+									<a href="assets/images/useof-isotop-plugin/img-1.jpg"><i class="fas fa-link"></i></a>
+									<h4>Project Title <span>Art Work</span></h4>
+								</div>
+							</div>
+							<div class="single-project-item project-bg-2 design">
+								<div class="project-item-hover">
+									<a href="assets/images/useof-isotop-plugin/img-2.jpg"><i class="fas fa-link"></i></a>
+									<h4>Project Title <span>Art Work</span></h4>
+								</div>
+							</div>
+							<div class="single-project-item project-bg-3 photo">
+								<div class="project-item-hover">
+									<a href="assets/images/useof-isotop-plugin/img-3.jpg"><i class="fas fa-link"></i></a>
+									<h4>Project Title <span>Art Work</span></h4>
+								</div>
+							</div>
+							<div class="single-project-item project-bg-4 web">
+								<div class="project-item-hover">
+									<a href="assets/images/useof-isotop-plugin/img-4.jpg"><i class="fas fa-link"></i></a>
+									<h4>Project Title <span>Art Work</span></h4>
+								</div>
+							</div>
+							<div class="single-project-item project-bg-5 graphic">
+								<div class="project-item-hover">
+									<a href="assets/images/useof-isotop-plugin/img-4.jpg"><i class="fas fa-link"></i></a>
+									<h4>Project Title <span>Art Work</span></h4>
+								</div>
+							</div>
+							<div class="single-project-item project-bg-6 design">
+								<div class="project-item-hover">
+									<a href="assets/images/useof-isotop-plugin/img-1.jpg"><i class="fas fa-link"></i></a>
+									<h4>Project Title <span>Art Work</span></h4>
+								</div>
+							</div>
+							<div class="single-project-item project-bg-7web">
+								<div class="project-item-hover">
+									<a href="assets/images/useof-isotop-plugin/img-3.jpg"><i class="fas fa-link"></i></a>
+									<h4>Project Title <span>Art Work</span></h4>
+								</div>
+							</div>
+							<div class="single-project-item project-bg-8 photo">
+								<div class="project-item-hover">
+									<a href="assets/images/useof-isotop-plugin/img-6.jpg"><i class="fas fa-link"></i></a>
+									<h4>Project Title <span>Art Work</span></h4>
+								</div>
+							</div>
+							<div class="single-project-item project-bg-9 design">
+								<div class="project-item-hover">
+									<a href="assets/images/useof-isotop-plugin/img-7.jpg"><i class="fas fa-link"></i></a>
+									<h4>Project Title <span>Art Work</span></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery-isotope-3.0.6.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	
+
+	<script type="text/javascript">
+		(function($){
+			"use strict";
+
+
+			jQuery(document).ready(function($){
+			// $(".project-list").isotope();
+
+
+			$(".project-titles li").on('click', function(){
+
+				$(".project-titles li").removeClass("active");
+				$(this).addClass("active");
+				var selector = $(this).attr("data-filter");
+				$(".project-list").isotope({
+					filter:selector
+				});
+			});
+		});
+		$('.project-list').isotope();
+		$(".single-project-item").magnificPopup({
+	         delegate: 'a', // child items selector, by clicking on it popup will open
+	 		 type: 'image'
+	    });
+	}(jQuery))
+		
+	</script>
+	
+</body>
+</html>
