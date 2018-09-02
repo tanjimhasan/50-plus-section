@@ -4042,7 +4042,7 @@ Fashion site style
   position: relative;
   z-index: 2; }
   .use-of-isotope .project-list .single-project-item:nth-child(2), .use-of-isotope .project-list .single-project-item:nth-child(4), .use-of-isotope .project-list .single-project-item:nth-child(5) {
-    height: 630px; }
+    height: 300px; }
   .use-of-isotope .project-list .single-project-item:hover .project-item-hover {
     opacity: 1;
     visibility: visible; }
