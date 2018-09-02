@@ -14,3 +14,12 @@
 
 ## 5) __Service Section Three__: 
 ![alt text](/screenshots/service-three.png)
+
+## 6) __Ecomerce Fashion PSD to HTML__: 
+![alt text](/screenshots/fashion-psd.jpg)
+
+## 7) __Project Showcase Section__: 
+![alt text](/screenshots/isotope-use.png)
+
+## 8) __Absolute Image On Homepage Slides__: 
+![alt text](/screenshots/absolute-image-on-slides.png)
