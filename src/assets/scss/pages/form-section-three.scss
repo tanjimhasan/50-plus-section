@@ -1,0 +1,77 @@
+/* ====================
+ Form Section Three style 
+ ==================== */
+
+ .form-section-three{
+ 	.white-box{	
+ 		padding:50px 25px;
+ 		box-shadow:0 0 10px #f5f5f5;
+ 		h2{
+ 			font-size:24px;
+ 			margin-bottom:40px;
+ 			font-weight:600;
+ 		}
+ 		.contact-form{
+ 			input,textarea{
+ 				width:100%;
+ 				margin-bottom:20px;
+ 			}
+ 			input[type=submit]{
+ 				width:auto;
+ 				background-color:#4DAEFE;
+ 				color:#fff;
+ 				border:none;
+ 				padding:10px 20px;
+ 				border-radius:5px;
+ 				margin-bottom:0;
+ 			}
+ 			textarea{
+ 				height:140px;
+ 				resize:none;
+ 			}
+ 		}
+ 	}
+ 	.colored-box{
+ 		background-color:#4DAEFE;
+ 		color:#fff;
+ 		padding:40px;
+ 		min-height:530px;
+ 		@include media-breakpoint-between(xs, md){
+			margin-top:40px;
+		}
+ 		h4{
+ 			margin-bottom:40px;
+ 		}
+ 		.contact-info{
+ 			padding-left:50px;
+ 			position:relative;
+ 			margin-bottom:30px;
+ 			i.fas{
+	 			position:absolute;
+	 			left:0;
+	 			font-size:20px;
+	 			top:8px;
+
+	 		}
+ 		}
+ 		.social-links{
+ 			a{
+ 				height:40px;
+ 				width:40px;
+ 				background-color:#fff;
+ 				color:#333;
+ 				display:inline-block;
+ 				text-align:center;
+ 				line-height:2.5;
+ 				border-radius:50%;
+ 				margin-right:5px;
+ 				&:hover{
+ 					color:#4DAEFE;
+ 				}
+ 			}
+ 		}	
+ 		a{
+ 			color:#fff;
+ 		}
+ 	}
+ }

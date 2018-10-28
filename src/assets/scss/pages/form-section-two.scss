@@ -1,0 +1,135 @@
+/* ===================== 
+
+Form Section Two style 
+
+===================== */
+
+.form-section-two{
+	position:relative;
+	.section-block{
+		padding:100px 0;
+	}
+	.section-block{
+		@include media-breakpoint-between(xs, sm){
+			padding:40px 0;
+		}
+	}
+	.section-bg{
+		background-image:url('../images/comming-soon/comming-soon-bg.jpg');
+		background-size:cover;
+		background-position:center;
+		background-color:#ddd;
+		position:absolute;
+		left:0;
+		top:0;
+		width:60%;
+		height:100%;
+		@include media-breakpoint-between(xs, sm){
+			width:100%;
+			height:62%;
+		}
+		&:after{
+			position:absolute;
+			width:100%;
+			height:100%;
+			left:0;
+			top:0;
+			background-color:#33CDB6;
+			opacity:.9;
+			content:"";
+		}
+
+	}
+	.contact-form{
+        padding-left: 55px;
+		padding-top: 35px;
+		@include media-breakpoint-between(xs, sm){
+			padding:0;
+		}
+		.absolute-text{
+			color:#fff;
+		}
+		input , textarea{
+			width:100%;
+			padding:15px;
+			border:none;
+			color:#333;
+			margin-bottom:15px;
+		}
+		input[type=submit]{
+			width:auto;
+			background-color:#fff;
+			color:#37CFB7;
+			font-weight:700;
+			border-radius: 5px;
+			cursor:pointer;
+		}
+		.absolute-text{
+			-ms-transform: rotate(-20deg);
+    		transform: rotate(270deg);
+		    position: absolute;
+		    left: -105px;
+		    bottom: 190px;
+		    font-size: 35px;
+		    font-weight: 800;
+		    letter-spacing: 1.5px;
+		    opacity: .5;
+		    @include media-breakpoint-only(md) {
+		        bottom: 240px;
+		    }
+		    @include media-breakpoint-between(xs, sm){
+				bottom: 0;
+			    position: static;
+			    transform: rotate(0deg);
+			}
+		}
+	}
+	.appointment-text{
+		padding-left:65px;
+		padding-top:35px;
+		@include media-breakpoint-between(xs, sm){
+			padding:0;
+			margin-top:40px;
+		}
+		h3{
+			font-weight:700;
+			font-size:26px;
+			margin-bottom:30px;
+			@include media-breakpoint-between(xs, sm){
+				font-size:22px;
+			}
+		}
+		ul.check-list{
+	 		margin:0;
+	 		padding:0;
+	 		list-style:none;
+	 		color:#525252;
+	 		li{
+	 			padding-left:25px;
+	 			position:relative;
+	 			font-size:15px;
+	 			margin-bottom:20px;
+	 			&:before{
+	 				position:absolute;
+	 				left:0;
+	 				top:1px;
+	 				font-family:"Font Awesome 5 Free";
+	 				content:"\f14a";
+	 				font-weight:900;
+	 				color:#2ECC71;
+	 			}
+	 			
+	 		}
+	 	}
+	 	a.boxed-btn {
+		    display: inline-block;
+		    padding: 10px 30px;
+		    background: #35C0AC;
+		    color: #fff;
+		    border-radius: 5px;
+		    font-weight: 700;
+		    text-decoration: none;
+		    margin-top:10px;
+		}
+	}
+}
