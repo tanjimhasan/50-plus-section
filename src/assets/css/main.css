@@ -3961,6 +3961,9 @@ Pricing Section style
 .pricing-section-one .section-block {
   padding: 40px 0; }
 
+.pricing-section-one .boxed-price-section {
+  margin: -20px 0; }
+
 .pricing-section-one .section-title {
   margin-bottom: 50px; }
   .pricing-section-one .section-title h2 {
@@ -3975,9 +3978,11 @@ Pricing Section style
   padding: 20px;
   border: 1px solid #D6DDD9;
   text-align: center;
+  margin: 20px 0;
   transition: .4s; }
   .pricing-section-one .single-price-item h3 {
-    font-weight: 600; }
+    font-weight: 600;
+    color: #333; }
   .pricing-section-one .single-price-item .pricing-icon {
     margin: 30px 0; }
   .pricing-section-one .single-price-item .pricing-list ul {
@@ -6226,6 +6231,12 @@ Pricing Section Two style
     .pricing-section-two .section-bg .price-boxes .single-price-box {
       flex-basis: 33.33%;
       position: relative; }
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .pricing-section-two .section-bg .price-boxes .single-price-box {
+          flex-basis: 50%; } }
+      @media (max-width: 575.98px) {
+        .pricing-section-two .section-bg .price-boxes .single-price-box {
+          flex-basis: 100%; } }
       .pricing-section-two .section-bg .price-boxes .single-price-box:after {
         position: absolute;
         right: 0;
@@ -6275,8 +6286,17 @@ Pricing Section Two style
             content: "$";
             font-size: 26px;
             position: absolute;
-            left: 28px;
+            left: 8%;
             top: -3px; }
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+              .pricing-section-two .section-bg .price-boxes .single-price-box .price-box-inner .price-content:before {
+                left: 0%; } }
+            @media (min-width: 768px) and (max-width: 991.98px) {
+              .pricing-section-two .section-bg .price-boxes .single-price-box .price-box-inner .price-content:before {
+                left: 0%; } }
+            @media (max-width: 575.98px) {
+              .pricing-section-two .section-bg .price-boxes .single-price-box .price-box-inner .price-content:before {
+                left: 14%; } }
           .pricing-section-two .section-bg .price-boxes .single-price-box .price-box-inner .price-content:after {
             content: "/mo";
             font-size: 30px; }
@@ -7551,9 +7571,8 @@ body.theme-1 {
     .useof-isotope-two .single-filter-item .single-fliter-hover h4 {
       font-size: 20px;
       margin-bottom: 10px;
-      color:#333;
-      font-weight: 700;
-      line-height: 1.6; }
+      line-height: 1.6;
+      color: #333; }
     .useof-isotope-two .single-filter-item .single-fliter-hover p {
       margin: 0;
       font-weight: 700;
