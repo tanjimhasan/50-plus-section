@@ -5477,6 +5477,9 @@ absolute Image on Home Page Slides style
     padding-right: 20px;
     display: inline-block;
     cursor: pointer; }
+    @media (max-width: 575.98px) {
+      .use-of-isotope ul.project-titles li {
+        padding-right: 12px; } }
   .use-of-isotope ul.project-titles li.active {
     color: #06D4D4; }
 
@@ -5491,8 +5494,15 @@ absolute Image on Home Page Slides style
   margin-top: 20px;
   position: relative;
   z-index: 2; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .use-of-isotope .project-list .single-project-item {
+      width: 48%; } }
+  @media (max-width: 767.98px) {
+    .use-of-isotope .project-list .single-project-item {
+      width: 100%;
+      margin-left: 0; } }
   .use-of-isotope .project-list .single-project-item:nth-child(2), .use-of-isotope .project-list .single-project-item:nth-child(4), .use-of-isotope .project-list .single-project-item:nth-child(5) {
-    height: 630px; }
+    height: 620px; }
   .use-of-isotope .project-list .single-project-item:hover .project-item-hover {
     opacity: 1;
     visibility: visible; }
