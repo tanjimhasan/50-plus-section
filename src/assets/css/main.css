@@ -3418,7 +3418,7 @@ About Section style
           margin-top: 30px; } }
       @media (max-width: 575.98px) {
         .full-width-bg-area .minus-margin .profile-image {
-          margin-right: 45px; } }
+          margin-right: 50px; } }
       .full-width-bg-area .minus-margin .profile-image img {
         z-index: 2; }
       .full-width-bg-area .minus-margin .profile-image:after {
