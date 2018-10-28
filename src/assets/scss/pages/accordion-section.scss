@@ -18,12 +18,18 @@ About Section style
 			left:0;
 			top:0;
 			content:"";
+			@include media-breakpoint-between(xs, md){
+				display:none;
+			}
 		}
 		
 	}
 	p{
 		
 		margin-bottom:30px;
+		@include media-breakpoint-only(xs) {
+	       font-size:14px;
+	    }
 	}
 	h2.section-title{
 		color:#030303;
@@ -31,8 +37,11 @@ About Section style
 		margin-bottom:20px;
 		font-weight:900;
 		text-transform:uppercase;
+		@include media-breakpoint-only(xs) {
+	       font-size:22px;
+	    }
 		span{
-			color:#1AB3FE;
+			color:#1AB3FE; 
 		}
 		&:after{
 			display:none;
@@ -61,6 +70,10 @@ About Section style
 		    		font-weight:500;
 		    		text-decoration:none;
 		    		position:relative;
+		    		@include media-breakpoint-only(xs) {
+				       font-size:13px;
+				       padding:5px;
+				    }
 		    		i.fas{
 		    			float:right;
 		    			font-size:150%;
@@ -79,6 +92,11 @@ About Section style
 		    			display:block;
 		    		}
 		    	}
+		    }
+		}
+		.card-body{
+			@include media-breakpoint-only(xs) {
+		       font-size:14px;
 		    }
 		}
 	}

@@ -14,12 +14,19 @@ About Section style
 		padding:120px 70px;
 		margin-top:-70px;
 		margin-bottom:-70px;
+		@include media-breakpoint-only(xs) {
+	        padding-left:46px;
+	        padding-right:10px;
+	    }
 		.boxed-content{
 			line-height:25px;
 			font-size:15px;
 			position:relative;
 			padding-top: 25px;
     		padding-left: 30px;
+    		@include media-breakpoint-between(xs, sm){
+				padding-left: 0;
+			}
 			&:before{
 				position:absolute;
 				left:-35px;
@@ -56,12 +63,18 @@ About Section style
 			h2{
 				font-size:40px;
 				margin-bottom:25px;
+				color:#fff;
 			}
 			.author-name{
 				font-size:24px;
 				position:relative;
 				padding-left:60px;
 				margin-top: 16px;
+				color:#fff;
+				@include media-breakpoint-between(xs, sm){
+					font-size:20px;
+					padding-left:10px;
+				}
 				&:before{
 					position: absolute;
 				    width: 40px;
@@ -70,6 +83,11 @@ About Section style
 				    top: 15px;
 				    content: "";
 				    background-color: #fff;
+				    @include media-breakpoint-between(xs, sm){
+						left: -20px;
+						top: 10px;
+						width: 30px;
+					}
 				}
 				span{
 					font-size:65%;
@@ -80,10 +98,18 @@ About Section style
 			}
 			
 		}
-
 		.profile-image{
 				position:relative;
 				z-index:2;
+				@include media-breakpoint-only(md) {
+			        margin-top:40px;
+			    }
+			    @include media-breakpoint-between(xs, sm){
+					margin-top:30px;
+				}
+				@include media-breakpoint-only(xs) {
+			        margin-right:45px;
+			    }
 				img{
 					z-index:2;
 				}
